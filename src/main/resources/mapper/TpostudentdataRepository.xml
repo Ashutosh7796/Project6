@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".TpostudentdataRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Tpostudentdata">
+        <!--@JPA.Support generated on 2023-10-30 10:56:31.-->
+        <!--@Table tpostudentdata-->
+        <id column="TpoStudentData" jdbcType="INTEGER" property="tpoStudentData"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="TestName" jdbcType="VARCHAR" property="testName"/>
+        <result column="TotalMarks" jdbcType="VARCHAR" property="totalMarks"/>
+        <result column="Marks" jdbcType="VARCHAR" property="marks"/>
+        <result column="Result" jdbcType="VARCHAR" property="result"/>
+        <result column="TpoStudentDatacol" jdbcType="VARCHAR" property="tpoStudentDatacol"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:31.-->
+        TpoStudentData, UserId, TestName, TotalMarks, Marks, `Result`, TpoStudentDatacol
+    </sql>
+</mapper>

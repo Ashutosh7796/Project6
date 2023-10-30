@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".StudentdataRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Studentdata">
+        <!--@JPA.Support generated on 2023-10-30 10:56:30.-->
+        <!--@Table studentdata-->
+        <id column="StudentData" jdbcType="INTEGER" property="studentData"/>
+        <result column="Batch" jdbcType="VARCHAR" property="batch"/>
+        <result column="StudentId" jdbcType="INTEGER" property="studentId"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="Branch" jdbcType="VARCHAR" property="branch"/>
+        <result column="StudentDatacol" jdbcType="VARCHAR" property="studentDatacol"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:30.-->
+        StudentData, Batch, StudentId, UserId, Branch, StudentDatacol
+    </sql>
+</mapper>

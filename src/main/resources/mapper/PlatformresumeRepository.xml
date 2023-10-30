@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".PlatformresumeRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Platformresume">
+        <!--@JPA.Support generated on 2023-10-30 10:56:29.-->
+        <!--@Table platformresume-->
+        <id column="PlatformResume" jdbcType="INTEGER" property="platformResume"/>
+        <result column="Address" jdbcType="VARCHAR" property="address"/>
+        <result column="HighstLevelOfEud" jdbcType="VARCHAR" property="highstLevelOfEud"/>
+        <result column="CollageName" jdbcType="VARCHAR" property="collageName"/>
+        <result column="UniversityName" jdbcType="VARCHAR" property="universityName"/>
+        <result column="Percentages" jdbcType="VARCHAR" property="percentages"/>
+        <result column="ExperienceType" jdbcType="VARCHAR" property="experienceType"/>
+        <result column="Experience" jdbcType="VARCHAR" property="experience"/>
+        <result column="LastCompany" jdbcType="VARCHAR" property="lastCompany"/>
+        <result column="LastCompanyDesignation" jdbcType="VARCHAR" property="lastCompanyDesignation"/>
+        <result column="User_UserId" jdbcType="INTEGER" property="userUserid"/>
+        <result column="Skills" jdbcType="VARCHAR" property="skills"/>
+        <result column="LastCompanyJoingDate" jdbcType="VARCHAR" property="lastCompanyJoingDate"/>
+        <result column="LastDateOrCurrentlyWorking" jdbcType="VARCHAR" property="lastDateOrCurrentlyWorking"/>
+        <result column="LastCompanyDescription1" jdbcType="VARCHAR" property="lastCompanyDescription1"/>
+        <result column="LastCompanyDescription2" jdbcType="VARCHAR" property="lastCompanyDescription2"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:29.-->
+        PlatformResume, Address, HighstLevelOfEud, CollageName, UniversityName, Percentages, ExperienceType, Experience,
+        LastCompany, LastCompanyDesignation, User_UserId, Skills, LastCompanyJoingDate, LastDateOrCurrentlyWorking,
+        LastCompanyDescription1, LastCompanyDescription2
+    </sql>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".UserRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.User">
+        <!--@JPA.Support generated on 2023-10-30 10:56:31.-->
+        <!--@Table user-->
+        <id column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="FullName" jdbcType="VARCHAR" property="fullName"/>
+        <result column="Email" jdbcType="VARCHAR" property="email"/>
+        <result column="MoNumber" jdbcType="VARCHAR" property="moNumber"/>
+        <result column="Password" jdbcType="VARCHAR" property="password"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+        <result column="Date" jdbcType="DATE" property="date"/>
+        <result column="ref" jdbcType="VARCHAR" property="ref"/>
+        <result column="Gender" jdbcType="VARCHAR" property="gender"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:31.-->
+        UserId, FullName, Email, MoNumber, `Password`, `Status`, `Date`, `ref`, Gender
+    </sql>
+</mapper>

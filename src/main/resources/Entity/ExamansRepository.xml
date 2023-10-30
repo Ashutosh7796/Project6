@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".ExamansRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Examans">
+        <!--@JPA.Support generated on 2023-10-30 10:58:22.-->
+        <!--@Table examans-->
+        <id column="ExamAns" jdbcType="INTEGER" property="examAns"/>
+        <result column="Q" jdbcType="VARCHAR" property="q"/>
+        <result column="ans" jdbcType="VARCHAR" property="ans"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="SeatNo" jdbcType="VARCHAR" property="seatNo"/>
+        <result column="Sub" jdbcType="VARCHAR" property="sub"/>
+        <result column="Date" jdbcType="TIMESTAMP" property="date"/>
+        <result column="ExamAnscol" jdbcType="VARCHAR" property="examAnscol"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:22.-->
+        ExamAns, Q, ans, UserId, SeatNo, Sub, `Date`, ExamAnscol
+    </sql>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".DocumentsRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Documents">
+        <!--@JPA.Support generated on 2023-10-30 10:58:22.-->
+        <!--@Table documents-->
+        <id column="DocumentsId" jdbcType="INTEGER" property="documentsId"/>
+        <result column="DocType" jdbcType="VARCHAR" property="docType"/>
+        <result column="DocLInk" jdbcType="VARCHAR" property="docLInk"/>
+        <result column="User_UserId" jdbcType="INTEGER" property="userUserid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:22.-->
+        DocumentsId, DocType, DocLInk, User_UserId
+    </sql>
+</mapper>

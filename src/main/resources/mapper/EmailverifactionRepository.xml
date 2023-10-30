@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".EmailverifactionRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Emailverifaction">
+        <!--@JPA.Support generated on 2023-10-30 10:56:26.-->
+        <!--@Table emailverifaction-->
+        <id column="Id" jdbcType="INTEGER" property="id"/>
+        <result column="Email" jdbcType="VARCHAR" property="email"/>
+        <result column="otp" jdbcType="VARCHAR" property="otp"/>
+        <result column="creation_time" jdbcType="TIMESTAMP" property="creationTime"/>
+        <result column="userotp" jdbcType="VARCHAR" property="userotp"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:26.-->
+        Id, Email, otp, creation_time, userotp, `status`
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".JobscreenansRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Jobscreenans">
+        <!--@JPA.Support generated on 2023-10-30 10:56:28.-->
+        <!--@Table jobscreenans-->
+        <id column="JobScreenAns" jdbcType="INTEGER" property="jobScreenAns"/>
+        <result column="Question" jdbcType="VARCHAR" property="question"/>
+        <result column="Ans" jdbcType="VARCHAR" property="ans"/>
+        <result column="Type" jdbcType="VARCHAR" property="type"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="JobId" jdbcType="INTEGER" property="jobId"/>
+        <result column="seatNO" jdbcType="VARCHAR" property="seatNO"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:28.-->
+        JobScreenAns, Question, Ans, `Type`, UserId, JobId, seatNO
+    </sql>
+</mapper>

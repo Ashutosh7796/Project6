@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".MentorRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Mentor">
+        <!--@JPA.Support generated on 2023-10-30 10:58:25.-->
+        <!--@Table mentor-->
+        <id column="MentorId" jdbcType="INTEGER" property="mentorId"/>
+        <result column="SpecialityOfMentor" jdbcType="VARCHAR" property="specialityOfMentor"/>
+        <result column="Skills" jdbcType="VARCHAR" property="skills"/>
+        <result column="Subject" jdbcType="VARCHAR" property="subject"/>
+        <result column="MentorInfo" jdbcType="VARCHAR" property="mentorInfo"/>
+        <result column="Achievements" jdbcType="VARCHAR" property="achievements"/>
+        <result column="SocalMediaLinkF" jdbcType="VARCHAR" property="socalMediaLinkF"/>
+        <result column="AboutAs" jdbcType="VARCHAR" property="aboutAs"/>
+        <result column="SocalMediaLinkL" jdbcType="VARCHAR" property="socalMediaLinkL"/>
+        <result column="SocalMediaLinkF1" jdbcType="VARCHAR" property="socalMediaLinkF1"/>
+        <result column="SocalMediaLinkInsta" jdbcType="VARCHAR" property="socalMediaLinkInsta"/>
+        <result column="User_UserId" jdbcType="INTEGER" property="userUserid"/>
+        <result column="Cost" jdbcType="VARCHAR" property="cost"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:25.-->
+        MentorId, SpecialityOfMentor, Skills, Subject, MentorInfo, Achievements, SocalMediaLinkF, AboutAs,
+        SocalMediaLinkL, SocalMediaLinkF1, SocalMediaLinkInsta, User_UserId, Cost
+    </sql>
+</mapper>

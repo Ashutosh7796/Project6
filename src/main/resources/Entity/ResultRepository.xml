@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".ResultRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Result">
+        <!--@JPA.Support generated on 2023-10-30 10:58:26.-->
+        <!--@Table result-->
+        <id column="resultId" jdbcType="INTEGER" property="resultId"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="Date" jdbcType="TIMESTAMP" property="date"/>
+        <result column="actualScore" jdbcType="VARCHAR" property="actualScore"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:26.-->
+        resultId, UserId, `Date`, actualScore, `Status`
+    </sql>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".EventsRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Events">
+        <!--@JPA.Support generated on 2023-10-30 10:56:26.-->
+        <!--@Table events-->
+        <id column="Eventsid" jdbcType="INTEGER" property="eventsid"/>
+        <result column="EventName" jdbcType="VARCHAR" property="eventName"/>
+        <result column="EventDetails" jdbcType="VARCHAR" property="eventDetails"/>
+        <result column="EventTagline" jdbcType="VARCHAR" property="eventTagline"/>
+        <result column="EventDate" jdbcType="DATE" property="eventDate"/>
+        <result column="Date" jdbcType="DATE" property="date"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+        <result column="Photo" jdbcType="VARCHAR" property="photo"/>
+        <result column="Price" jdbcType="VARCHAR" property="price"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:26.-->
+        Eventsid, EventName, EventDetails, EventTagline, EventDate, `Date`, `Status`, Photo, Price
+    </sql>
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".StudentprofileRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Studentprofile">
+        <!--@JPA.Support generated on 2023-10-30 10:58:27.-->
+        <!--@Table studentprofile-->
+        <id column="StudentId" jdbcType="INTEGER" property="studentId"/>
+        <result column="ExperienceType" jdbcType="VARCHAR" property="experienceType"/>
+        <result column="WorkExperience" jdbcType="VARCHAR" property="workExperience"/>
+        <result column="LastWorkDuration" jdbcType="VARCHAR" property="lastWorkDuration"/>
+        <result column="LastCompany" jdbcType="VARCHAR" property="lastCompany"/>
+        <result column="LastSalary" jdbcType="VARCHAR" property="lastSalary"/>
+        <result column="PreviousDesignation" jdbcType="VARCHAR" property="previousDesignation"/>
+        <result column="CareerBreak" jdbcType="VARCHAR" property="careerBreak"/>
+        <result column="HighestLevleOfEud" jdbcType="VARCHAR" property="highestLevleOfEud"/>
+        <result column="CurrentLoaction" jdbcType="VARCHAR" property="currentLoaction"/>
+        <result column="AvailableToJoin" jdbcType="VARCHAR" property="availableToJoin"/>
+        <result column="Specialization" jdbcType="VARCHAR" property="specialization"/>
+        <result column="Course" jdbcType="VARCHAR" property="course"/>
+        <result column="CourseDuration" jdbcType="VARCHAR" property="courseDuration"/>
+        <result column="Skills" jdbcType="VARCHAR" property="skills"/>
+        <result column="User_UserId" jdbcType="INTEGER" property="userUserid"/>
+        <result column="shortAboutYoureself" jdbcType="VARCHAR" property="shortAboutYoureself"/>
+        <result column="PreferredSalary" jdbcType="VARCHAR" property="preferredSalary"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:27.-->
+        StudentId, ExperienceType, WorkExperience, LastWorkDuration, LastCompany, LastSalary, PreviousDesignation,
+        CareerBreak, HighestLevleOfEud, CurrentLoaction, AvailableToJoin, Specialization, Course, CourseDuration,
+        Skills, User_UserId, shortAboutYoureself, PreferredSalary
+    </sql>
+</mapper>

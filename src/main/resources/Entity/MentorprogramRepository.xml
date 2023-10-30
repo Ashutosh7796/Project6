@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".MentorprogramRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Mentorprogram">
+        <!--@JPA.Support generated on 2023-10-30 10:58:26.-->
+        <!--@Table mentorprogram-->
+        <id column="MentorProgramId" jdbcType="INTEGER" property="mentorProgramId"/>
+        <result column="ProgramName" jdbcType="VARCHAR" property="programName"/>
+        <result column="ProgramDetails" jdbcType="VARCHAR" property="programDetails"/>
+        <result column="Date" jdbcType="DATE" property="date"/>
+        <result column="Price" jdbcType="VARCHAR" property="price"/>
+        <result column="Time" jdbcType="TIME" property="time"/>
+        <result column="MentorProgramcol" jdbcType="VARCHAR" property="mentorProgramcol"/>
+        <result column="Mentor_MentorId" jdbcType="INTEGER" property="mentorMentorid"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:26.-->
+        MentorProgramId, ProgramName, ProgramDetails, `Date`, Price, `Time`, MentorProgramcol, Mentor_MentorId, `Status`
+    </sql>
+</mapper>

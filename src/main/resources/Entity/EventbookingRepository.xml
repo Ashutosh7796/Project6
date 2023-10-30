@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".EventbookingRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Eventbooking">
+        <!--@JPA.Support generated on 2023-10-30 10:58:22.-->
+        <!--@Table eventbooking-->
+        <id column="EventBookingId" jdbcType="INTEGER" property="eventBookingId"/>
+        <result column="Date" jdbcType="TIMESTAMP" property="date"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+        <result column="Events_Eventsid" jdbcType="INTEGER" property="eventsEventsid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:22.-->
+        EventBookingId, `Date`, UserId, `Status`, Events_Eventsid
+    </sql>
+</mapper>

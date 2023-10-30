@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".MentorprogrambookingsRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Mentorprogrambookings">
+        <!--@JPA.Support generated on 2023-10-30 10:56:29.-->
+        <!--@Table mentorprogrambookings-->
+        <id column="MentorProgramBookings" jdbcType="INTEGER" property="mentorProgramBookings"/>
+        <result column="Date" jdbcType="DATE" property="date"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="MentorProgramBookingscol" jdbcType="VARCHAR" property="mentorProgramBookingscol"/>
+        <result column="MentorProgram_MentorProgramId" jdbcType="INTEGER" property="mentorprogramMentorprogramid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:29.-->
+        MentorProgramBookings, `Date`, UserId, MentorProgramBookingscol, MentorProgram_MentorProgramId
+    </sql>
+</mapper>

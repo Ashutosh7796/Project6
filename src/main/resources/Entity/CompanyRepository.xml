@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".CompanyRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Company">
+        <!--@JPA.Support generated on 2023-10-30 10:58:21.-->
+        <!--@Table company-->
+        <id column="CompanyId" jdbcType="INTEGER" property="companyId"/>
+        <result column="CompanyName" jdbcType="VARCHAR" property="companyName"/>
+        <result column="GestnNo" jdbcType="VARCHAR" property="gestnNo"/>
+        <result column="CompanyServices" jdbcType="VARCHAR" property="companyServices"/>
+        <result column="CompanyType" jdbcType="VARCHAR" property="companyType"/>
+        <result column="CompanyLevel" jdbcType="VARCHAR" property="companyLevel"/>
+        <result column="Logo" jdbcType="VARCHAR" property="logo"/>
+        <result column="OfficeAddress" jdbcType="VARCHAR" property="officeAddress"/>
+        <result column="CompanyLocations" jdbcType="VARCHAR" property="companyLocations"/>
+        <result column="OneCopmpanyDoc" jdbcType="VARCHAR" property="oneCopmpanyDoc"/>
+        <result column="RefNo" jdbcType="VARCHAR" property="refNo"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+        <result column="User_UserId" jdbcType="INTEGER" property="userUserid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:21.-->
+        CompanyId, CompanyName, GestnNo, CompanyServices, CompanyType, CompanyLevel, Logo, OfficeAddress,
+        CompanyLocations, OneCopmpanyDoc, RefNo, `Status`, User_UserId
+    </sql>
+</mapper>

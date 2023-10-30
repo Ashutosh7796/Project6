@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".HrcallRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Hrcall">
+        <!--@JPA.Support generated on 2023-10-30 10:58:23.-->
+        <!--@Table hrcall-->
+        <id column="HrCall" jdbcType="INTEGER" property="hrCall"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="SelfId" jdbcType="INTEGER" property="selfId"/>
+        <result column="Date" jdbcType="DATE" property="date"/>
+        <result column="Time" jdbcType="TIME" property="time"/>
+        <result column="Poastion" jdbcType="VARCHAR" property="poastion"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+        <result column="Respond" jdbcType="VARCHAR" property="respond"/>
+        <result column="Hr_HrId" jdbcType="INTEGER" property="hrHrid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:23.-->
+        HrCall, UserId, SelfId, `Date`, `Time`, Poastion, `Status`, Respond, Hr_HrId
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".StudentapplicationsRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Studentapplications">
+        <!--@JPA.Support generated on 2023-10-30 10:56:30.-->
+        <!--@Table studentapplications-->
+        <id column="StudentApplicationsId" jdbcType="INTEGER" property="studentApplicationsId"/>
+        <result column="Date" jdbcType="DATE" property="date"/>
+        <result column="Time" jdbcType="TIME" property="time"/>
+        <result column="RecuterNote" jdbcType="VARCHAR" property="recuterNote"/>
+        <result column="JobId" jdbcType="INTEGER" property="jobId"/>
+        <result column="StudentApplicationscol" jdbcType="VARCHAR" property="studentApplicationscol"/>
+        <result column="User_UserId" jdbcType="INTEGER" property="userUserid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:30.-->
+        StudentApplicationsId, `Date`, `Time`, RecuterNote, JobId, StudentApplicationscol, User_UserId
+    </sql>
+</mapper>

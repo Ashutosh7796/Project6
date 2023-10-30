@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".UserplanRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Userplan">
+        <!--@JPA.Support generated on 2023-10-30 10:58:28.-->
+        <!--@Table userplan-->
+        <id column="userPlanId" jdbcType="INTEGER" property="userPlanId"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="PlanId" jdbcType="INTEGER" property="planId"/>
+        <result column="PayId" jdbcType="INTEGER" property="payId"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:28.-->
+        userPlanId, UserId, PlanId, PayId, `status`
+    </sql>
+</mapper>

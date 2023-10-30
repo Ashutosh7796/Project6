@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".JobRepository">
+    <resultMap id="BaseResultMap" type="com.Slm/Entity.Job">
+        <!--@JPA.Support generated on 2023-10-30 10:58:24.-->
+        <!--@Table job-->
+        <id column="JobId" jdbcType="INTEGER" property="jobId"/>
+        <result column="CompanyName" jdbcType="VARCHAR" property="companyName"/>
+        <result column="PostName" jdbcType="VARCHAR" property="postName"/>
+        <result column="JobLoaction" jdbcType="VARCHAR" property="jobLoaction"/>
+        <result column="Address" jdbcType="VARCHAR" property="address"/>
+        <result column="Skills" jdbcType="VARCHAR" property="skills"/>
+        <result column="JobDescription" jdbcType="VARCHAR" property="jobDescription"/>
+        <result column="PostDate" jdbcType="VARCHAR" property="postDate"/>
+        <result column="Salary" jdbcType="VARCHAR" property="salary"/>
+        <result column="NoOfPost" jdbcType="INTEGER" property="noOfPost"/>
+        <result column="Logo" jdbcType="VARCHAR" property="logo"/>
+        <result column="ExperienceLevel" jdbcType="VARCHAR" property="experienceLevel"/>
+        <result column="JobType" jdbcType="VARCHAR" property="jobType"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+        <result column="Incentives" jdbcType="VARCHAR" property="incentives"/>
+        <result column="EssentialRequirements" jdbcType="VARCHAR" property="essentialRequirements"/>
+        <result column="SeatNo" jdbcType="VARCHAR" property="seatNo"/>
+        <result column="User_UserId" jdbcType="INTEGER" property="userUserid"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:58:24.-->
+        JobId, CompanyName, PostName, JobLoaction, Address, Skills, JobDescription, PostDate, Salary, NoOfPost, Logo,
+        ExperienceLevel, JobType, `Status`, Incentives, EssentialRequirements, SeatNo, User_UserId
+    </sql>
+</mapper>

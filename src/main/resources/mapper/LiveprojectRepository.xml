@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".LiveprojectRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Liveproject">
+        <!--@JPA.Support generated on 2023-10-30 10:56:28.-->
+        <!--@Table liveproject-->
+        <id column="LiveProject" jdbcType="INTEGER" property="liveProject"/>
+        <result column="Domain" jdbcType="VARCHAR" property="domain"/>
+        <result column="InternshipType" jdbcType="VARCHAR" property="internshipType"/>
+        <result column="InternshipDuration" jdbcType="VARCHAR" property="internshipDuration"/>
+        <result column="PointOfContact" jdbcType="VARCHAR" property="pointOfContact"/>
+        <result column="PointOfContact01" jdbcType="VARCHAR" property="pointOfContact01"/>
+        <result column="Company" jdbcType="VARCHAR" property="company"/>
+        <result column="Location" jdbcType="VARCHAR" property="location"/>
+        <result column="JobDescription" jdbcType="VARCHAR" property="jobDescription"/>
+        <result column="KeySkill" jdbcType="VARCHAR" property="keySkill"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:28.-->
+        LiveProject, `Domain`, InternshipType, InternshipDuration, PointOfContact, PointOfContact01, Company,
+        `Location`, JobDescription, KeySkill
+    </sql>
+</mapper>

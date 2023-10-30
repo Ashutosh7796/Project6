@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".CareerplanningRepository">
+    <resultMap id="BaseResultMap" type="com.Slm.Entity.Careerplanning">
+        <!--@JPA.Support generated on 2023-10-30 10:56:25.-->
+        <!--@Table careerplanning-->
+        <id column="CareerPlanning" jdbcType="INTEGER" property="careerPlanning"/>
+        <result column="Domain" jdbcType="VARCHAR" property="domain"/>
+        <result column="Mode" jdbcType="VARCHAR" property="mode"/>
+        <result column="Slot" jdbcType="TIMESTAMP" property="slot"/>
+        <result column="cost" jdbcType="VARCHAR" property="cost"/>
+        <result column="UserId" jdbcType="INTEGER" property="userId"/>
+        <result column="Status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2023-10-30 10:56:25.-->
+        CareerPlanning, `Domain`, `Mode`, Slot, cost, UserId, `Status`
+    </sql>
+</mapper>
